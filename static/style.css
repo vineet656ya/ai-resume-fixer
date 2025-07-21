@@ -1,0 +1,136 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  color: #222;
+}
+
+main {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 24px #dbeafe99;
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 830px;
+}
+
+.top-banner, .bottom-banner {
+  background: #f8fafc;
+  padding: 30px 15px; /* Increased padding for more space */
+  text-align: center;
+  color: #888;
+  border: 1px solid #e0e7ef;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner {
+  border-width: 0 0 1px 0;
+}
+
+.bottom-banner {
+  border-width: 1px 0 0 0;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 250px;
+  font-size: 1rem;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #f8fafc;
+  color: #222;
+}
+
+input[type="file"] {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 6px;
+  background: #f8fafc;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: #374151;
+  font-weight: 600;
+}
+
+button {
+  width: 100%;
+  background: #4f46e5;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled] {
+  background: #9ca3af;
+}
+
+button:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+#resultBox {
+  margin-top: 32px;
+  display: none;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+#resultBox.visible {
+  display: block;
+}
+
+h1 {
+    text-align: center;
+    color: #22223b;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    flex-grow: 1; /* Add this line */
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+  color: #1d1d32;
+  font-size: 1.3rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  font-size: 0.9em;
+}
+.footer a {
+  color: #4f46e5;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
