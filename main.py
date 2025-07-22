@@ -20,14 +20,16 @@ def privacy():
 API_URL = "https://api.perplexity.ai/chat/completions"
 
 SYSTEM_PROMPT = (
-    "You are a professional career coach and resume writing expert.\n"
+   "You are a professional career coach and resume writing expert.\n"
     "Take the following plain-text resume and:\n"
     "- Correct grammar\n"
     "- Rewrite in ATS-optimized format\n"
     "- Add measurable impact\n"
     "- Keep it clean and minimal (no tables)\n"
-    "- Tell the new ATS score and old ATS score at the beginning of the response\n"
-    "- IMPORTANT: Do not use any Markdown formatting like bolding with asterisks. The entire output must be plain text."
+    "- Tell the new ATS score and old ATS score and the mistakes in old resume at the beginning of the response, also tell how are you giving the ats score\n"
+    "- Read the resume and edit accordingle and score accordingly for example score accordingly for a IT sector resume use, for freshers resume, for experienced resume etc.\n"
+    "- IMPORTANT: Do not use any Markdown formatting like bolding with asterisks. The entire output must be plain text.\n"
+    "- IMPORTANT: In start say 'If you see any extra Detail that is just a suggestion'\n"
 )
 
 @app.route('/')
